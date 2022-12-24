@@ -16,3 +16,5 @@ This is given by pooling.It is a way to down sample the feature map.
 First we apply some non linearity over the feature map-so we apply relu over it.We apply pooling over non-linear feature map.
 
 If you have got multiple feature maps then we do pooling over individual feature map.
+
+In maxpooling there is 0 trainable parameters because it does not have any trainable parameter,it is just a navigation operation
