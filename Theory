@@ -1,0 +1,18 @@
+Pooling is the layer added to the CNN just after the convolution layer.
+Problem with convolution operation:-
+1)Memory issue
+2)Translation Variance
+
+We can reduce the size of feature map by increasing the value of stride.but we use pooling more than stride.bcz pooling solves the problem of translational variance.
+
+Translation Variance:-
+Convolutional operation follows the translation variance.The function of convolutional operation is to seek features in the image.But when we apply convolutional operation
+then the features we identify become location dependent.But when we are doing image classification,then location should not worry us,the feature is more imp. but if our 
+features become location dependent,then in the further layers,they will be treated differently,like the ear of a cat in top left of the image will be considered 
+differengt from the image of the cat in top right.The problem with convolution operation is that the feature which we are detecting,location is tied up with them.
+We want translation invariance.
+This is given by pooling.It is a way to down sample the feature map.
+
+First we apply some non linearity over the feature map-so we apply relu over it.We apply pooling over non-linear feature map.
+
+If you have got multiple feature maps then we do pooling over individual feature map.
