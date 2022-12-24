@@ -26,3 +26,10 @@ Advantages of Pooling:-
 3)Enhanced feature(this advantage only in case of Max Pooling-not in case of other types of pooling)
   This is bcz. since max-pooling takes out the maximum of all,brighter features are captured from the receptive area thus increasing the intensity.
 4)No need of training-in convolution layer filters the value of filters is known through back-propagation while training but pooling is just an aggregate operation.-faster
+
+
+Global max pooling-find the maximum value from the feature space-used when we flatten the feature space to be passed to the ANN after the CNN layers-reduce overfitting
+
+Disadvantages of pooling:-
+1)Pooling abolishes the translation invarince which has a disadvantage in problems of image segmentation(to divide image into segments)used in self driving cars.
+2)You loose a lot of information.
