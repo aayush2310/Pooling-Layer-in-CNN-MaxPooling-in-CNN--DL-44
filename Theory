@@ -18,3 +18,11 @@ First we apply some non linearity over the feature map-so we apply relu over it.
 If you have got multiple feature maps then we do pooling over individual feature map.
 
 In maxpooling there is 0 trainable parameters because it does not have any trainable parameter,it is just a navigation operation
+
+Advantages of Pooling:-
+1)size of feature map gets reduced.
+2)Translation invariance-It does not matter where is the feature,only this matters that there is a feature.-we down sample the feature map,so it focusses more on high level
+  features and ignore low level features.
+3)Enhanced feature(this advantage only in case of Max Pooling-not in case of other types of pooling)
+  This is bcz. since max-pooling takes out the maximum of all,brighter features are captured from the receptive area thus increasing the intensity.
+4)No need of training-in convolution layer filters the value of filters is known through back-propagation while training but pooling is just an aggregate operation.-faster
